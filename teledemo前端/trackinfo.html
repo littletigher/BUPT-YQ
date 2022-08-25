@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <title>疫情轨迹</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" /> -->
+    <!--制作的图标，使用href关联，仅仅需要更改href的内容  -->
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <link href="./css/userinfo.css" rel="stylesheet">
+   
+</head>
+
+<body style="height: 100%; margin: 0">
+
+    <div class="card-body">
+        <form id="searchForm" class="form-inline" style="float: left;">
+            用户id:<input type="text" class="form-control" name="searchId"/>
+            <button class="layui-btn layui-btn-radius">查询</button>&nbsp;&nbsp;&nbsp;
+        </form>
+        <button class="layui-btn layui-btn-radius" id="total" style="float: left;margin-top: 2px;">全部</button>
+    </div>
+
+
+    <div id="container" style="height: 100%; width: 100%;"></div>
+
+
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <!-- <script src="./js/beijing.js"></script> -->
+    <script
+        src="https://api.map.baidu.com/api?v=3.0&ak=DD279b2a90afdf0ae7a3796787a0742e"></script>
+    <script
+        src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+    <script src="./js/track.js"></script>
+    
+</body>
+
+</html>
