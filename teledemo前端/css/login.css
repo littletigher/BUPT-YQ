@@ -1,0 +1,39 @@
+form{
+    width: 400px;
+    height: 250px;
+    padding: 25px 0px;
+    border: 1px solid rgb(129, 223, 226);
+    margin: 100px auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+form>label>input{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 13px;
+    outline: none;
+}
+form>p{
+    font-size: 14px;
+    padding-left: 20px;
+}
+form>a>button{
+    width: 60px;
+    height: 40px;
+}
+form>div>button{
+    width: 60px;
+    height: 40px;
+}
+form>span{
+    color: red;
+    padding-left: 100px;
+    display: none;
+}
+form>span.active{
+    display: block;
+}
